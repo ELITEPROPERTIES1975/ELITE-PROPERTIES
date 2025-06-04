@@ -1,108 +1,116 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elite Properties - Land & Property Dealer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Elite Properties - Land Dealership</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      font-family: 'Outfit', sans-serif;
     }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914') center/cover no-repeat;
-      color: rgb(10, 10, 10);
-      padding: 6rem 2rem;
-      text-align: center;
+    .image-glow {
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.25), 0 4px 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .info-section {
-      padding: 3rem 2rem;
-      background-color: white;
-    }
-    .info-section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #003366;
-    }
-    .info-section p {
-      max-width: 800px;
-      line-height: 1.6;
-    }
-    .contact-section {
-      padding: 2rem;
-      background-color: #e9ecef;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .contact-section h4 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: #003366;
-    }
-    .contact-buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #003366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #003366;
-      color: white;
+    .image-glow:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 36px rgba(255, 215, 0, 0.4), 0 6px 12px rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Elite Properties</h1>
-    <span>Land & Property Dealer</span>
+<body class="bg-gradient-to-br from-[#0e0e0e] to-[#2e2e2e] min-h-screen text-white">
+  <!-- Navbar -->
+  <header class="bg-[#121212] shadow-xl sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-yellow-400 drop-shadow">Elite Land Dealers</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#about" class="hover:text-yellow-400">About</a>
+        <a href="#services" class="hover:text-yellow-400">Services</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
   </header>
-  <section class="hero">
-    <h2>Find Your Dream Property Today</h2>
-    <p>We offer the best land and property deals in the region. Residential, commercial or industrial — we’ve got it all covered with trusted service and transparency.</p>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-[#1f1f1f] fade-in">
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow">Secure Land. Secure Future.</h2>
+    <p class="text-gray-300 text-lg mb-8">Elite Land Dealers - Leading the way since 1975</p>
+    <img src="https://images.unsplash.com/photo-1600566752603-68b79bfc8246?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Land" class="mx-auto rounded-xl image-glow w-full max-w-3xl mb-8" />
+    <a href="tel:9766759711" class="px-6 py-3 bg-yellow-500 text-black font-semibold rounded-full hover:bg-yellow-600 transition shadow-lg">📞 Contact 9766759711</a>
   </section>
-  <section class="info-section">
-    <h3>Why Choose Us?</h3>
-    <p>With over 10 years of experience in real estate, we have helped thousands of clients find the right properties at the right prices. Whether you're buying, selling, or investing, we offer professional guidance, legal support, and market expertise.</p>
+
+  <!-- Motivation Section -->
+  <section class="py-16 px-4 max-w-5xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-6 text-white drop-shadow">Legacy in Every Plot</h3>
+    <p class="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">For nearly five decades, Elite Land Dealers has built trust by connecting clients with the best plots and land investments. Our name stands for reliability, value, and unmatched service.</p>
+    <p class="mt-6 text-xl font-semibold text-yellow-400 italic">"We don’t just sell land. We offer opportunity, security, and growth."</p>
   </section>
-  <section class="contact-section">
-    <h4>Contact Us</h4>
-    <div class="contact-buttons">
-      <a href="tel:+919766759711">Call Now</a>
-      <a href="mailto:eliteproperties@email.com">Email Us</a>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-8 text-white drop-shadow">About Us</h3>
+    <p class="text-center text-gray-300 text-lg">Elite Land Dealers has been a trusted name in land dealership since 1975. From urban plots to farmland and industrial spaces, we help clients make informed and profitable land purchases across India.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-[#2a2a2a]">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12 text-white drop-shadow">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-[#1f1f1f] rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1587502536263-3f94acb52dc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="mb-4 rounded-lg image-glow" alt="Residential Plot" />
+          <h4 class="text-xl font-semibold mb-3 text-yellow-400">Residential Plots</h4>
+          <p class="text-gray-300">We offer premium residential plots in growing neighborhoods and developed regions.</p>
+        </div>
+        <div class="bg-[#1f1f1f] rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="mb-4 rounded-lg image-glow" alt="Commercial Land" />
+          <h4 class="text-xl font-semibold mb-3 text-yellow-400">Commercial Land</h4>
+          <p class="text-gray-300">Ideal plots for building offices, shops, or other commercial ventures in high-potential areas.</p>
+        </div>
+        <div class="bg-[#1f1f1f] rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="mb-4 rounded-lg image-glow" alt="Farm Land" />
+          <h4 class="text-xl font-semibold mb-3 text-yellow-400">Farm & Agricultural Land</h4>
+          <p class="text-gray-300">Get access to fertile and legally verified agricultural land for long-term investment.</p>
+        </div>
+      </div>
     </div>
   </section>
-  <footer>
-    &copy; 2025 Elite Properties. All rights reserved.
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10 text-white drop-shadow">Get in Touch</h3>
+    <form id="contactForm" class="bg-[#1f1f1f] p-8 rounded-xl shadow-lg space-y-6">
+      <input type="text" placeholder="Name" class="w-full border border-gray-600 bg-[#2a2a2a] text-white p-3 rounded-md" required>
+      <input type="email" placeholder="Email" class="w-full border border-gray-600 bg-[#2a2a2a] text-white p-3 rounded-md" required>
+      <textarea rows="4" placeholder="Message" class="w-full border border-gray-600 bg-[#2a2a2a] text-white p-3 rounded-md" required></textarea>
+      <button type="submit" class="w-full bg-yellow-500 text-black py-3 rounded-md hover:bg-yellow-600 transition shadow">Send Message</button>
+    </form>
+    <p id="formSuccess" class="text-center text-yellow-400 mt-4 hidden">Thanks for reaching out! We'll contact you soon.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#121212] text-center py-6 text-gray-400 border-t border-gray-700 mt-10">
+    &copy; 2025 Elite Land Dealers. All rights reserved.
   </footer>
+
+  <!-- JS Interactivity -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      form.reset();
+      success.classList.remove('hidden');
+    });
+  </script>
 </body>
 </html>
